@@ -29,6 +29,110 @@ body {
     position: relative;
 }
 
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+/* CONTAINER */
+
+.container{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:60px;
+    padding:40px;
+
+    flex-wrap:wrap;
+}
+
+/* TEXTO */
+
+.text-content{
+    max-width:500px;
+}
+
+.text-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.text-content p{
+    font-size:1.2rem;
+    color:#ccc;
+}
+
+/* IMAGEM */
+
+.image-content img{
+    width:350px;
+    max-width:100%;
+    border-radius:20px;
+}
+
+/* ICONES */
+
+.social-icons{
+    margin-top:20px;
+
+    display:flex;
+    gap:20px;
+}
+
+.social-icon{
+    color:white;
+    font-size:2rem;
+    transition:0.3s;
+}
+
+.social-icon:hover{
+    color:#999;
+    transform:scale(1.2);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px){
+
+    .container{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+    }
+
+    .text-content h1{
+        font-size:2.5rem;
+    }
+
+    .text-content p{
+        font-size:1rem;
+    }
+
+    .image-content img{
+        width:250px;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+}
 /* ==========================================================================
    2. FONTES / LETRAS
    ========================================================================== */
